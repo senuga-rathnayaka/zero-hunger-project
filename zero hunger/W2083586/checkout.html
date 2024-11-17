@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class='container'>
+        <div class='window'>
+            <div class='order-info'>
+                <div class='order-info-content'>
+                    <h2>Personal Information</h2>
+                    <form id="personal-info-form" novalidate>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="input-field" required>
+
+                        <label for="address">Billing Address</label>
+                        <input type="text" id="address" class="input-field" required>
+
+                        <label for="telephone">Telephone Number</label>
+                        <input type="tel" id="telephone" class="input-field" required>
+
+                        <label for="postal-code">Postal Code</label>
+                        <input type="text" id="postal-code" class="input-field" required>
+                    </form>
+                </div>
+            </div>
+            <div class='credit-info'>
+                <div class='credit-info-content'>
+                    <table class='half-input-table'>
+                        <tr>
+                            <td>Please select your card: </td>
+                            <td>
+                                <div class='dropdown' id='card-dropdown'>
+                                    <div class='dropdown-btn' id='current-card'>Visa</div>
+                                    <div class='dropdown-select'>
+                                        <ul>
+                                            <li>Master Card</li>
+                                            <li>American Express</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' height='80'
+                        class='credit-card-image' id='credit-card-image' alt='Visa logo'>
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" class='input-field' required>
+
+                    <label for="card-holder">Card Holder</label>
+                    <input type="text" id="card-holder" class='input-field' required>
+
+                    <table class='half-input-table'>
+                        <tr>
+                            <td>
+                                <label for="expires">Expires</label>
+                                <input type="text" id="expires" class='input-field' required>
+                            </td>
+                            <td>
+                                <label for="cvc">CVC</label>
+                                <input type="text" id="cvc" class='input-field' required>
+                            </td>
+                        </tr>
+                    </table>
+                    <button class='pay-btn' id="checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="backbutton">
+        <a href="index.html" class="dpt-trigger">
+            <i class="ri-arrow-left-s-line"></i>
+        </a>
+    </div>
+    <script src="checkout.js"></script>
+</body>
+
+</html>

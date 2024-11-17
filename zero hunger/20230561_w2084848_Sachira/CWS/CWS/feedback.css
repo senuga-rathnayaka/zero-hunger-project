@@ -1,0 +1,206 @@
+/* Navigation bar */
+.navdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 98%;
+    z-index: 1000;
+    transition: top 0.4s ease-in-out, background-color 0.4s ease-in-out;
+}
+
+.navdiv.scrolled {
+    background-color: rgba(79, 76, 76, 0.327);
+}
+
+/* Navbar styling */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000000;
+    font-weight: bold;
+    font-size: larger;
+    padding: 10px;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #282727;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Navbar toggle button for mobile */
+.nav-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navbar ul.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-20px);
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+    .navbar ul {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 10px;
+        background-color: rgba(79, 76, 76, 0.9);
+        padding: 10px;
+        border-radius: 5px;
+        display: none;
+    }
+    .navbar ul.visible {
+        display: flex;
+        animation: fadeIn 0.5s ease-in-out;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.body {
+    background-color: #494974; /* Dark blue color */
+}
+
+/* General form styling */
+#feedback-form {
+    max-width: 600px;
+    margin: 80px auto 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #486164f7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for fieldset and legend */
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* Input and textarea styling */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Radio button styling */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Submit and reset button styling */
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="reset"] {
+    background-color: #f44336;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    opacity: 0.9;
+}
+
+/* Confirmation message styling */
+#confirmation-message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: green;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+    #feedback-form {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+        width: calc(100% - 20px);
+    }
+}
+
+
+/* Footer styles */
+footer {
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

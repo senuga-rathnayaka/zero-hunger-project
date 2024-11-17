@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plate Promise</title>
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+<body>
+
+
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="/splash.html"><img src="logo.png" alt="Logo" width="100" height="80"></a>
+            </li>
+            <li class="nav-item">
+                <a href="/20230561_w2084848_Sachira/CWS/CWS/Index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="/w2083585/team.html">Team</a>
+            </li>
+            <li class="nav-item">
+                <a href="/gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a href="/sitemap.html">Site map</a>
+            </li>
+            <li class="nav-item">
+                <a href="/20230561_w2084848_Sachira/CWS/CWS/feedback.html">feedback </a>
+            </li>
+            <li class="nav-item">
+                <a href="/W2083586/index.html">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a href="/w2083585/main.html">User profile </a>
+            </li>
+            <li class="nav-item">
+                <button class="btn-primary">Donate</button>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <main>
+        <form id="feedback-form">
+            <fieldset>
+                <legend>Feedback</legend>
+                <label for="fname">Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+                <label for="rate">Rating (1-5):</label>
+                <input type="number" id="rate" name="rate" min="1" max="5" required><br><br>
+
+                <label for="comment">Comments:</label>
+                <textarea id="comment" name="comment" rows="7" cols="50" placeholder="Enter your comments"
+                    required></textarea><br><br>
+
+                <legend>Is this your first time visiting this website?</legend>
+                <input type="radio" id="first-time-yes" name="first-time" value="yes" required>
+                <label for="first-time-yes">Yes</label><br>
+
+                <input type="radio" id="first-time-no" name="first-time" value="no">
+                <label for="first-time-no">No</label><br><br>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+                <div id="confirmation-message"></div>
+            </fieldset>
+        </form>
+    </main>
+
+
+    <footer>
+        <nav class="footer">
+            <ul>
+                <a class="footerline" href="pageeditor.html">Page edited by Sachira Delankawala | </a>
+                <a class="footerline" href="http://127.0.0.1:5501/index.html">Instagram - @plapro.lk | </a>
+                <a class="footerline" href="https://www.google.com/"> Facebook - @plapro.lk | </a>
+                <a class="footerline" href="https://www.google.com/"> Youtube - PlatePromise | </a>
+                <a class="footerline" href="https://www.google.com/"> LinkedIn - PlaPro.lk |</a><br>
+                <p class="footerline"> &copy; 2024 PlatePromise. All Rights Reserved.</p>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

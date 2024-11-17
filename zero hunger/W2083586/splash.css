@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Michroma", sans-serif;
+    height: 100vh;
+    overflow: hidden; /* Prevent scroll during animation */
+}
+
+.container {
+    background-color: black;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: transform 1s ease; /* Smooth transition for swipe-up */
+}
+
+.loading-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    color: #191654;
+}
+
+#logo {
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    animation: fadeIn 3s forwards, fadeOut 1.5s 3.5s forwards;
+    padding-top: 80px;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.name-container {
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.logo-name {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-weight: bolder;
+    opacity: 0;
+}
+
+.group-members {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px; /* Adjust the margin as needed */
+    margin-left: 270px;
+
+}
+
+.group-members li {
+    color: #fff;
+    font-size: 11px; /* Smaller font size */
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: fadeIn 3s forwards, fadeOut 1.5s 3.5s forwards;
+    display: flex;
+    align-items: center; /* Center vertically */
+    
+
+}
+
+.group-members li i {
+    margin-right: 20px; /* Adjust spacing between icon and text */
+    padding-left: 50px;
+    margin-top: auto;
+    animation: fadeIn 3s forwards, fadeOut 1.5s 3.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="/splash.html"><img src="assets/logo.png" alt="Logo" width="100" height="80"></a>
+            </li>
+            <li class="nav-item">
+                <a href="/20230561_w2084848_Sachira/CWS/CWS/Index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="/w2083585/team.html">Team</a>
+            </li>
+            <li class="nav-item">
+                <a href="/gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a href="/sitemap.html">Site map</a>
+            </li>
+            <li class="nav-item">
+                <a href="/20230561_w2084848_Sachira/CWS/CWS/feedback.html">feedback </a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a href="/w2083585/main.html">User profile </a>
+            </li>
+            <li class="nav-item">
+                <button class="btn-primary">Donate</button>
+            </li>
+        </ul>
+    </nav>
+    <div id="page" class="site">
+        <header>
+            <div class="header-top mobile-hide">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="left">
+                            <ul class="flexitem main-links">
+                                <li><a href="#">Featured products</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <ul class="flexitem main-links">
+                                <li><a href="#">Sign Up</a></li>
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">Order Tracking</a></li>
+                                <li>
+                                    <a href="#">USD <span class="icon-small"><i
+                                                class="ri-arrow-down-s-line"></i></span></a>
+                                    <ul>
+                                        <li><a href="#">USD</a></li>
+                                        <li><a href="#">LKR</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">English <span class="icon-small"><i
+                                                class="ri-arrow-down-s-line"></i></span></a>
+                                    <ul>
+                                        <li><a href="#">USA</a></li>
+                                        <li><a href="#">Srilanka</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
+                        <div class="left flexitem">
+                            <div class="logo"><a href="/"><span class="circle"></span>.Store</a></div>
+                            <nav class="mobile-hide">
+
+                            </nav>
+                        </div>
+                        <div class="right">
+                            <ul class="flexitem second-links">
+                                <li>
+                                    <a href="#" class="iscart">
+                                        <div class="icon-large">
+                                            <i class="ri-shopping-cart-line"></i>
+                                            <div class="fly-item"><span class="item-number">0</span></div>
+                                        </div>
+                                        <div class="icon-text">
+                                            <div class="mini-text">Total</div>
+                                            <div class="cart-total">$0.00</div>
+                                        </div>
+                                    </a>
+                                    <div class="cart-popup">
+                                        <div class="cart-items">
+                                            <!-- Cart items will be dynamically added here -->
+                                        </div>
+                                        <div class="cart-actions">
+                                            <button class="checkout-button" id="checkoutButton">Checkout</button>
+                                            <button class="close-button">Close</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main mobile-hide">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="left">
+                            <div class="dpt-cat">
+                                <div class="dpt-head">
+                                    <div class="main-text">All foods</div>
+                                    <div class="mini-text mobile-hide">Total 200 Products</div>
+                                    <a href="#" class="dpt-trigger mobile-hide">
+                                        <i class="ri-menu-3-line ri xl"></i>
+                                    </a>
+                                </div>
+                                <div class="dpt-menu">
+                                    <ul class="second-link">
+                                        <li class="has-child beauty">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-restaurant-line"></i></div>
+                                                Food
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                        </li>
+                                        <li class="has-child electric">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-drinks-fill"></i></div>
+                                                Drinks
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                        </li>
+                                        <li class="has-child fashion">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-restaurant-2-line"></i></div>
+                                                Spices
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="search-box">
+                                <form action="#" class="search">
+                                    <span class="icon-large">
+                                        <i class="ri-search-line"></i></span>
+                                    <input type="search" placeholder="Search for Products">
+                                    <button type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="slider">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="myslider">
+                        <div class="slide">
+                            <div class="item">
+                                <div class="image object-cover">
+                                    <img src="assets/59ff.jpeg" alt="">
+                                </div>
+                                <div class="text-content flexcol">
+                                    <h4>Food items</h4>
+                                    <h2><span>Come to get it!</span><br><span>Healthy food</span></h2>
+                                    <a href="#" class="primary-button">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="item">
+                                <div class="image object-cover">
+                                    <img src="assets/58ff.jpeg" alt="">
+                                </div>
+                                <div class="text-content flexcol">
+                                    <h4>Dairy Products</h4>
+                                    <h2><span>Eat Fresh</span><br><span>Stay Healthy</span></h2>
+                                    <a href="#" class="primary-button">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="item">
+                                <div class="image object-cover">
+                                    <img src="assets/57ff.jpeg" alt="">
+                                </div>
+                                <div class="text-content flexcol">
+                                    <h4>Spices</h4>
+                                    <h2><span>Savor the Flavor</span><br><span>Taste the Difference</span></h2>
+                                    <a href="#" class="primary-button">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="trending">
+        <div class="close-button" id="close2" onclick="closeTrending()">×</div>
+        <div class="container">
+            <div class="wrapper">
+                <div class="sectop flexitem">
+                    <h2><span class="circle"></span><span>Offers</span></h2>
+                </div>
+                <div class="products-wrapper">
+                    <div class="column">
+                        <div class="flexwrap">
+                            <div class="row products big">
+                                <div class="item">
+                                    <div class="offer">
+                                        <p>Offer ends at</p>
+                                        <ul class="flexcenter">
+                                            <li>1</li>
+                                            <li>15</li>
+                                            <li>27</li>
+                                            <li>60</li>
+                                        </ul>
+                                    </div>
+                                    <div class="media">
+                                        <div class="image">
+                                            <a href="#">
+                                                <img src="assets/11pd.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"><span>31%</span></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(2,548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="#">Fresh Milk </a></h3>
+                                        <div class="price">
+                                            <span class="current">USD : 1.00</span>
+                                            <span class="normal mini-text">USD : 2.99</span>
+                                        </div>
+                                        <div class="stock mini-text">
+                                            <div class="qty">
+                                                <span>Stock: <strong class="qty-available">107</strong></span>
+                                                <span>sold: <strong class="qty-sold">3.459</strong></span>
+                                            </div>
+                                            <div class="bar">
+                                                <div class="available"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- trend -->
+    <div class="features">
+        <div class="container">
+            <div class="wrapper">
+                <div class="column">
+                    <div class="sectop flexitem">
+                        <h2><span class="circle"></span><span>Food Items</span></h2>
+                        <div class="second-links">
+                            <a href="#" class="view-all">View all<i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                    <div class="products main flexwrap">
+                        <div class="container">
+                            <div class="grid-container" id="shop">
+                                <div class="item2">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/11pd.png" alt="Product">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable1">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(2,58)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="#">Fresh Milk</a></h3>
+                                        <div class="price">
+                                            <span class="current">USD : 4.99</span>
+                                            <span class="normal mini-text">USD : 7.99</span>
+                                        </div>
+                                    </div>
+                                    <div class="button-container">
+                                        <button class="primary-button">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="item2">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/12.jpg" alt="Product">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable1">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(2,548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="#">Termeric</a></h3>
+                                        <div class="price">
+                                            <span class="current">USD : 15.00</span>
+                                            <span class="normal mini-text">USD : 17.99</span>
+                                        </div>
+                                    </div>
+                                    <div class="button-container">
+                                        <button class="primary-button">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="item2">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/13.png" alt="Product">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable1">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(2,548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="#">Chillie Powder</a></h3>
+                                        <div class="price">
+                                            <span class="current">USD : 2.00</span>
+                                            <span class="normal mini-text">USD : 3.99</span>
+                                        </div>
+                                    </div>
+                                    <div class="button-container">
+                                        <button class="primary-button">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="item2">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/14.jpg" alt="Product">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable1">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(2,548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="#">Ginger powder</a></h3>
+                                        <div class="price">
+                                            <span class="current">USD : 20.00</span>
+                                            <span class="normal mini-text">Rs : 25.99</span>
+                                        </div>
+                                    </div>
+                                    <div class="button-container">
+                                        <button class="primary-button">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="item2">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/15.jpg" alt="Product">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable1">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(2,548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="#">Tea Leaves</a></h3>
+                                        <div class="price">
+                                            <span class="current">USD : 8.00</span>
+                                            <span class="normal mini-text">USD : 10.99</span>
+                                        </div>
+                                    </div>
+                                    <div class="button-container">
+                                        <button class="primary-button">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="item2">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/16.jpg" alt="Product">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable1">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(2,548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="#">Coffe</a></h3>
+                                        <div class="price">
+                                            <span class="current">USD : 12.00</span>
+                                            <span class="normal mini-text">Rs : 15.99</span>
+                                        </div>
+                                    </div>
+                                    <div class="button-container">
+                                        <button class="primary-button">Add to Cart</button>
+                                    </div>
+                                </div>
+
+                                <div class="item2">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/17.jpg" alt="Product">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable1">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(2,548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="#">Dhal</a></h3>
+                                        <div class="price">
+                                            <span class="current">USD : 7.99</span>
+                                            <span class="normal mini-text">USD : 10.99</span>
+                                        </div>
+                                    </div>
+                                    <div class="button-container">
+                                        <button class="primary-button">Add to Cart</button>
+                                    </div>
+                                </div>
+
+                                <div class="item2">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/18.jpg" alt="Product">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable1">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(2,548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="#">Wheat Floar</a>
+                                        </h3>
+                                        <div class="price">
+                                            <span class="current">USD : 5.00</span>
+                                            <span class="normal mini-text">USD : 7.99</span>
+                                        </div>
+                                    </div>
+                                    <div class="button-container">
+                                        <button class="primary-button">Add to Cart</button>
+                                    </div>
+                                </div>
+
+                                <div class="item2">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/19.jpg" alt="Product">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable1">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(2,548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="#">Canned Fish</a></h3>
+                                        <div class="price">
+                                            <span class="current">USD : 4.99</span>
+                                            <span class="normal mini-text">USD : 6.99</span>
+                                        </div>
+                                    </div>
+                                    <div class="button-container">
+                                        <button class="primary-button">Add to Cart</button>
+                                    </div>
+                                </div>
+
+                                <!-- alert -->
+                                <div class="popup-alert">
+                                    <span class="close-alert" onclick="closeAlert()">&times;</span>
+                                    <div class="alert-content">
+                                        <p>Product added to cart!</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- button to  go upper -->
+    <button class="scroll-to-top" title="Go to top"><i class="ri-arrow-up-s-line"></i></button>
+
+
+    <!-- button to  go upper -->
+    <button class="scroll-to-top" title="Go to top"><i class="ri-arrow-up-s-line"></i></button>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+        <p>
+            <a href="pageeditor.html" target="_blank">Page Editor</a> |
+            <a href="content.html" target="_blank">Content Page</a>
+        </p>
+        <p class="foot">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
